@@ -1,0 +1,83 @@
+﻿<Window x:Class="VisorImagenes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VisorImagenes"
+        mc:Ignorable="d"
+        Title="VisorImagenes"
+        MinHeight="547.414"
+        MinWidth="598.276"
+        Icon="assets1/125.ico">
+    <Grid>
+        <DockPanel>
+            <DockPanel DockPanel.Dock="Bottom"
+                       Background="#FF8EF9F9"
+                       Margin="5">
+
+                <TextBlock TextWrapping="Wrap"
+                           Text="Nº De Imágenes: 10"
+                           FontFamily="Rubik"
+                           FontSize="20" />
+
+                <TextBlock TextWrapping="Wrap"
+                           Text="Diseñado por Jorge Bernabeu"
+                           FontFamily="Rubik"
+                           HorizontalAlignment="Right"
+                           FontSize="20" />
+
+            </DockPanel>
+
+            <Border DockPanel.Dock="Right"
+                    Margin="5"
+                    BorderBrush="Black"
+                    BorderThickness="2"
+                    CornerRadius="3">
+                <DockPanel Background="#FF92F183"
+                           LastChildFill="False">
+
+                    <Button Content="Añadir Imagen"
+                            DockPanel.Dock="Top" 
+                            Margin="3"/>
+                    <Button Content="Eliminar Imagen"
+                            DockPanel.Dock="Top"
+                            Margin="3" />
+                    <Button Content="Eliminar Todas"
+                            DockPanel.Dock="Top"
+                            Margin="3" />
+                    <Button Content="Rotar"
+                            DockPanel.Dock="Bottom"
+                            Margin="3" />
+                    <Button Content="Recortar"
+                            DockPanel.Dock="Bottom"
+                            Margin="3" />
+                </DockPanel>
+            </Border>
+
+            <StackPanel DockPanel.Dock="Top">
+                <TextBlock TextWrapping="Wrap"
+                           VerticalAlignment="Top"
+                           HorizontalAlignment="Center"
+                           FontSize="48"
+                           FontFamily="Rubik"><Run Text="Visor de Imágenes" /></TextBlock>
+            </StackPanel>
+
+            <WrapPanel>
+
+                <Image Source="episodioIV.jpg"
+                       Height="200"></Image>
+                <Image Source="episodioIV.jpg"
+                       Height="200"></Image>
+                <Image Source="episodioIV.jpg"
+                       Height="200"></Image>
+                <Image Source="episodioIV.jpg"
+                       Height="200"></Image>
+                <Image Source="episodioIV.jpg"
+                       Height="200"></Image>
+                <Image Source="episodioIV.jpg"
+                       Height="200"></Image>
+            </WrapPanel>
+
+        </DockPanel>
+    </Grid>
+</Window>
