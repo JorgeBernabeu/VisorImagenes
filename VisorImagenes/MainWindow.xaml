@@ -9,22 +9,49 @@
         MinHeight="547.414"
         MinWidth="598.276"
         Icon="assets1/125.ico">
+
+    <Window.Resources>
+
+        <Style TargetType="{x:Type TextBlock}"
+               x:Key="TextoBottom">
+            <Setter Property="TextWrapping"
+                    Value="Wrap" />
+            <Setter Property="FontFamily"
+                    Value="Rubik" />
+            <Setter Property="FontSize"
+                    Value="20" />
+        </Style>
+
+        <Style TargetType="{x:Type Button}">
+
+            <Setter Property="DockPanel.Dock"
+                    Value="Top" />
+            <Setter Property="Margin"
+                    Value="3" />
+
+        </Style>
+
+        <Style TargetType="{x:Type Image}">
+
+            <Setter Property="Height"
+                    Value="200" />
+
+        </Style>
+    </Window.Resources>
+
+
     <Grid>
         <DockPanel>
             <DockPanel DockPanel.Dock="Bottom"
                        Background="#FF8EF9F9"
                        Margin="5">
 
-                <TextBlock TextWrapping="Wrap"
-                           Text="Nº De Imágenes: 10"
-                           FontFamily="Rubik"
-                           FontSize="20" />
+                <TextBlock Style="{StaticResource TextoBottom}"
+                           Text="Nº De Imágenes: 10" />
 
-                <TextBlock TextWrapping="Wrap"
+                <TextBlock Style="{StaticResource TextoBottom}"
                            Text="Diseñado por Jorge Bernabeu"
-                           FontFamily="Rubik"
-                           HorizontalAlignment="Right"
-                           FontSize="20" />
+                           HorizontalAlignment="Right" />
 
             </DockPanel>
 
@@ -36,21 +63,11 @@
                 <DockPanel Background="#FF92F183"
                            LastChildFill="False">
 
-                    <Button Content="Añadir Imagen"
-                            DockPanel.Dock="Top" 
-                            Margin="3"/>
-                    <Button Content="Eliminar Imagen"
-                            DockPanel.Dock="Top"
-                            Margin="3" />
-                    <Button Content="Eliminar Todas"
-                            DockPanel.Dock="Top"
-                            Margin="3" />
-                    <Button Content="Rotar"
-                            DockPanel.Dock="Bottom"
-                            Margin="3" />
-                    <Button Content="Recortar"
-                            DockPanel.Dock="Bottom"
-                            Margin="3" />
+                    <Button Content="Añadir Imagen" />
+                    <Button Content="Eliminar Imagen" />
+                    <Button Content="Eliminar Todas" />
+                    <Button Content="Rotar" />
+                    <Button Content="Recortar" />
                 </DockPanel>
             </Border>
 
@@ -64,18 +81,12 @@
 
             <WrapPanel>
 
-                <Image Source="episodioIV.jpg"
-                       Height="200"></Image>
-                <Image Source="episodioIV.jpg"
-                       Height="200"></Image>
-                <Image Source="episodioIV.jpg"
-                       Height="200"></Image>
-                <Image Source="episodioIV.jpg"
-                       Height="200"></Image>
-                <Image Source="episodioIV.jpg"
-                       Height="200"></Image>
-                <Image Source="episodioIV.jpg"
-                       Height="200"></Image>
+                <Image Source="episodioIV.jpg"></Image>
+                <Image Source="episodioIV.jpg"></Image>
+                <Image Source="episodioIV.jpg"></Image>
+                <Image Source="episodioIV.jpg"></Image>
+                <Image Source="episodioIV.jpg"></Image>
+                <Image Source="episodioIV.jpg"></Image>
             </WrapPanel>
 
         </DockPanel>
